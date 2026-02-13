@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Contacto</title>
+  <script>
+    function enviarCorreo() {
+      var nombre = document.getElementById("nombre").value;
+      var correo = document.getElementById("correo").value;
+      var mensaje = document.getElementById("mensaje").value;
+      
+      // Construir el cuerpo del correo electrónico
+      var cuerpoCorreo = "Nombre: " + nombre + "\nCorreo: " + correo + "\nMensaje: " + mensaje;
+      
+      // Abre el cliente de correo predeterminado del usuario con los datos del formulario
+      window.location.href = "mailto:letixmix@hotmail.com?subject=Consulta desde formulario de contacto&body=" + encodeURIComponent(cuerpoCorreo);
+    }
+  </script>
+</head>
+<body>
+
+<h2>Formulario de Contacto</h2>
+
+<form>
+  <label for="nombre">Nombre:</label><br>
+  <input type="text" id="nombre" name="nombre"><br>
+  
+  <label for="correo">Correo electrónico:</label><br>
+  <input type="email" id="correo" name="correo"><br>
+  
+  <label for="mensaje">Mensaje:</label><br>
+  <textarea id="mensaje" name="mensaje"></textarea><br>
+  
+  <input type="button" value="Enviar" onclick="enviarCorreo()">
+</form>
+
+</body>
+</html>

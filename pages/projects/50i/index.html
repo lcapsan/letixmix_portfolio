@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>50i</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="aos/aos.css">
+    <link href="css/date-time-picker-component.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#132620">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+    
+
+  </head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JMH0S8C35H"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JMH0S8C35H');
+</script>
+  <body data-bs-target="#header-nav" tabindex="0">
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+      <symbol xmlns="http://www.w3.org/2000/svg" id="facebook" viewBox="0 0 24 24">
+        <path fill="currentColor" d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4v-8.5Z" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="youtube" viewBox="0 0 32 32" width="20" height="20">
+        <path fill="currentColor" d="M29.41 9.26a3.5 3.5 0 0 0-2.47-2.47C24.76 6.2 16 6.2 16 6.2s-8.76 0-10.94.59a3.5 3.5 0 0 0-2.47 2.47A36.13 36.13 0 0 0 2 16a36.13 36.13 0 0 0 .59 6.74a3.5 3.5 0 0 0 2.47 2.47c2.18.59 10.94.59 10.94.59s8.76 0 10.94-.59a3.5 3.5 0 0 0 2.47-2.47A36.13 36.13 0 0 0 30 16a36.13 36.13 0 0 0-.59-6.74ZM13.2 20.2v-8.4l7.27 4.2Z" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="instagram" viewBox="0 0 256 256" width="20" height="20">
+        <path fill="currentColor" d="M128 80a48 48 0 1 0 48 48a48.05 48.05 0 0 0-48-48Zm0 80a32 32 0 1 1 32-32a32 32 0 0 1-32 32Zm48-136H80a56.06 56.06 0 0 0-56 56v96a56.06 56.06 0 0 0 56 56h96a56.06 56.06 0 0 0 56-56V80a56.06 56.06 0 0 0-56-56Zm40 152a40 40 0 0 1-40 40H80a40 40 0 0 1-40-40V80a40 40 0 0 1 40-40h96a40 40 0 0 1 40 40ZM192 76a12 12 0 1 1-12-12a12 12 0 0 1 12 12Z" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="twitter" viewBox="0 0 24 24" width="20" height="20">
+        <path fill="currentColor" d="M22.46 6c-.77.35-1.6.58-2.46.69c.88-.53 1.56-1.37 1.88-2.38c-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29c0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15c0 1.49.75 2.81 1.91 3.56c-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07a4.28 4.28 0 0 0 4 2.98a8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21C16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56c.84-.6 1.56-1.36 2.14-2.23Z" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="linkedin" viewBox="0 0 512 512" width="20" height="20">
+        <path fill="currentColor" d="M444.17 32H70.28C49.85 32 32 46.7 32 66.89v374.72C32 461.91 49.85 480 70.28 480h373.78c20.54 0 35.94-18.21 35.94-38.39V66.89C480.12 46.7 464.6 32 444.17 32Zm-273.3 373.43h-64.18V205.88h64.18ZM141 175.54h-.46c-20.54 0-33.84-15.29-33.84-34.43c0-19.49 13.65-34.42 34.65-34.42s33.85 14.82 34.31 34.42c-.01 19.14-13.31 34.43-34.66 34.43Zm264.43 229.89h-64.18V296.32c0-26.14-9.34-44-32.56-44c-17.74 0-28.24 12-32.91 23.69c-1.75 4.2-2.22 9.92-2.22 15.76v113.66h-64.18V205.88h64.18v27.77c9.34-13.3 23.93-32.44 57.88-32.44c42.13 0 74 27.77 74 87.64Z" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="x2" width="20" height="20" fill="currentColor" class="bi bi-twitter-x" viewBox="-6 0 26 16">
+        <path d="M9.5,6.8l5.8-6.2h-1.4l-5,5.4l-4-5.4H0l6.2,8.2L0,15.5h1.4l5.4-5.9l4.4,5.9H16L9.5,6.8z M2.1,1.6h2.2l9.7,12.9h-2.2L2.1,1.6z"/>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="navbar-icon" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="icon-arrow-left" viewBox="0 0 15 15">
+        <path fill="currentColor" fill-rule="evenodd" d="m2.707 8l3.147 3.146l-.708.707L.793 7.5l4.353-4.354l.708.708L2.707 7H14v1H2.707Z" clip-rule="evenodd" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="icon-arrow-right" viewBox="0 0 15 15">
+        <path fill="currentColor" fill-rule="evenodd" d="M9.854 3.146L14.207 7.5l-4.353 4.354l-.708-.708L12.293 8H1V7h11.293L9.146 3.854l.708-.708Z" clip-rule="evenodd" />
+      </symbol>
+    </svg>
+    <div id="bodywrap" class="overflow-hidden">
+      <header id="header" class="site-header position-absolute">
+        <nav id="header-nav" class="navbar navbar-expand-lg p-3 container-fluid position-fixed">
+          <div class="container-lg">
+            <a class="navbar-brand" href="index.html">
+              <!--<img src="images/main-logo.png" class="logo">-->
+              <img src="images/logoblanco.svg" class="logo">
+            </a>
+              <div>
+                <p class="p-comun p-0 m-0" data-translate="construction">CONSTRUCCIÓN</p>
+                <p class="p-comun p-0 m-0" data-translate="fit_out">FIT-OUT</p>
+                <p class="p-comun p-0 m-0" data-translate="facility_services">FACILITY SERVICES</p>
+              </div>
+
+            <button class="navbar-toggler d-flex d-lg-none order-3 p-2 shadow-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-expanded="false" aria-label="Toggle navigation">
+              <svg class="navbar-icon">
+                <use xlink:href="#navbar-icon"></use>
+              </svg>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="bdNavbar" aria-labelledby="bdNavbarOffcanvasLabel">
+              <div class="offcanvas-header px-4 pb-0">
+                <button type="button" class="btn-close btn-close-black" data-bs-dismiss="offcanvas" aria-label="Close" data-bs-target="#bdNavbar"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul id="navbar" class="navbar-nav justify-content-lg-center justify-content-md-end align-items-center flex-grow-1 text-hover">
+                  <li class="nav-item me-5">
+                    <a class="nav-link light p-0" href="about.html" data-translate="about_us">Sobre nosotros</a>
+                  </li>
+                  <li class="nav-item me-5">
+                    <a class="nav-link light p-0" href="proyectos.html" data-translate="projects">Proyectos</a>
+                  </li>
+                  <li class="nav-item me-5">
+                    <a class="nav-link light p-0" href="contacto.html" data-translate="contact">Contacto</a>
+                  </li>
+
+                </ul>
+                <div class="social-links d-flex mt-5 mt-lg-0  align-items-center justify-content-end">
+                  <ul class=" navbar-nav  list-unstyled align-items-center justify-content-end">
+                    <!--
+                    <li class="pe-4">
+                      <a href="#" class="light">
+                        <svg class="twitter" width="20" height="20">
+                          <use xlink:href="#x2"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="pe-4">
+                      <a href="#" class="light">
+                        <svg class="linkedin" width="20" height="20">
+                          <use xlink:href="#linkedin"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="pe-4">
+                      <a href="#" class="light">
+                        <svg class="youtube" width="20" height="20">
+                          <use xlink:href="#youtube"></use>
+                        </svg>
+                      </a>
+                    </li> -->                
+                    <li class="pe-4">
+                      <div class="custom-select" style="width:150px;">
+                          <select id="selectIdioma">
+                              <option value="0">Idioma</option>
+                              <option value="es" selected>🇪🇸 Español</option>
+                              <option value="en">🇬🇧 English</option>
+                          </select>
+                      </div>
+                  </li>
+
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <section id="intro">
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-aos="fade-in">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="image-holder position-relative">
+                <div class="bg-green-opacity" style="width: 100%; height: 100%; position: absolute;"></div>
+                <img src="images/banner-item11.jpg" alt="banner" class="banner-image">
+              </div>
+              <div class="container-lg">
+                <div class="banner-content position-absolute p-4" data-aos="fade-up">
+                  <p class="h3-intro" data-translate="intro">¿Qué nos hace diferentes?</p>
+                  <h1 class="banner-title light fw-bold" data-translate="intro1">Construimos proyectos únicos</h1>
+                  <a href="proyectos.html" class="btn-slide btn-medium btn-light hover-slide-right text-uppercase mt-5">
+                    <span data-translate="show-projects">Ver proyectos</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="image-holder position-relative">
+                <div class="bg-green-opacity" style="width: 100%; height: 100%; position: absolute;"></div>
+                <img src="images/banner-item2222.jpg" alt="banner" class="banner-image">
+              </div>
+              <div class="container-lg">
+                <div class="banner-content position-absolute p-4" data-aos="fade-up">
+                  <p class="h3-intro" data-translate="intro">¿Qué nos hace diferentes?</p>
+                  <h1 class="banner-title light fw-bold" data-translate="intro2">Equipo con experiencia destacada</h1>
+                  <a href="about.html" class="btn-slide btn-medium btn-light hover-slide-right text-uppercase mt-5">
+                    <span data-translate="more-info">Más información</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="image-holder position-relative">
+                <div class="bg-green-opacity" style="width: 100%; height: 100%; position: absolute;"></div>
+                <img src="images/banner-item33.jpg" alt="banner" class="banner-image">
+              </div>
+              <div class="container-lg">
+                <div class="banner-content position-absolute p-4" data-aos="fade-up">
+                  <p class="h3-intro" data-translate="intro">¿Qué nos hace diferentes?</p>
+                  <h1 class="banner-title light fw-bold" data-translate="intro3">Obsesión por la calidad</h1>
+                  <a href="about.html" class="btn-slide btn-medium btn-light hover-slide-right text-uppercase mt-5">
+                    <span data-translate="more-info">Más información</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="image-holder position-relative">
+                <div class="bg-green-opacity" style="width: 100%; height: 100%; position: absolute;"></div>
+                <img src="images/banner-item55.jpg" alt="banner" class="banner-image">
+              </div>
+              <div class="container-lg">
+                <div class="banner-content position-absolute p-4" data-aos="fade-up">
+                  <p class="h3-intro" data-translate="intro">¿Qué nos hace diferentes?</p>
+                  <h1 class="banner-title light fw-bold" data-translate="intro4">Método fast-track</h1>
+                  <a href="proyectos.html" class="btn-slide btn-medium btn-light hover-slide-right text-uppercase mt-5">
+                    <span data-translate="more-info">Más información</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          
+
+          <!-- Botones de navegación -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+      </section>
+
+
+
+
+      <section id="about" class="padding-large bg-cream">
+        <div class="container" data-aos="fade-up" data-aos-duration="2000">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="section-header">
+                <h2 class="text-uppercase mb-3 left-pattern" data-translate="what-do-we-do">Qué hacemos</h2>
+                <h3 class="" data-translate="what-do-we-do1">Construimos proyectos únicos de:</h3>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <p><strong class="pt-5 d-block" data-translate="what-do-we-do2">Viviendas uni/pluri-familiares</strong></p>
+              <p><strong class="p-0 d-block" data-translate="what-do-we-do3">Oficinas. Fit-Out</strong></p>
+              <p><strong class="p-0 d-block" data-translate="what-do-we-do4">Hoteles. Reconversiones y Fit-Out</strong></p>
+
+              <a href="about.html" class="btn-slide btn-medium btn-dark hover-slide-right text-uppercase mt-5">
+                <span data-translate="about-us">Sobre nosotros</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="projects" class="padding-large">
+        <div class="container">
+          <div class="section-header offset-lg-3 offset-md-2">
+            <h2 class="text-uppercase mb-3 left-pattern" data-translate="our-projects">Nuestros proyectos</h2>
+            <h3 class="text-uppercase" data-translate="our-projects1">Explora nuestros trabajos</h3>
+          </div>
+          <div class="projects-isotope">
+            <div class="projects-flters d-flex flex-wrap justify-content-center my-5" >
+              <button class="filter-button active border-0 bg-transparent me-5 mb-3" data-filter="*" data-translate="our-projects2">Ver todo</button>
+              <button class="filter-button border-0 bg-transparent me-5 mb-3" data-filter=".residencial" data-translate="our-projects3">Residencial</button>
+              <button class="filter-button border-0 bg-transparent me-5 mb-3" data-filter=".oficinas" data-translate="our-projects4">Oficinas/Coworking</button>
+              <button class="filter-button border-0 bg-transparent me-5 mb-3" data-filter=".hoteles" data-translate="our-projects5">Hoteles</button>
+              <!--<button class="filter-button border-0 bg-transparent me-5 mb-3" data-filter=".retail">Retail</button>-->
+            </div>
+            <div class="row isotope-container">
+              <!--PR01-->
+              <div class="col-lg-4 col-md-6 item residencial" >
+                  <div class="projects-content mx-auto image-holder zoom-effect" data-aos="zoom-out">
+                      <div class="overlay-container ">
+                          <img src="images/projects-item11.jpg" class="reveal-curve-top" alt="building">
+                          <div class="overlay">
+                              <div class="description">
+                                  <p data-translate="pr01d">Viviendas unifamiliares independientes</p>
+                                  <a href="" class="btn btn-slide btn-small btn-dark hover-slide-right text-uppercase mt-5">
+                                  <span data-translate="discover-f">Descubrir &nbsp;  &nbsp; ➞</span>
+                                  </a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  
+                  <h3 class="fs-3 text-center mt-3">
+                      <a href=" " data-translate="pr01t">Residencial</a>
+                  </h3>
+                  <div class="fs-6 text-center mb-5">
+                      <p data-translate="pr01u">Madrid, España · Residencial</p>
+                  </div>
+              </div>
+              <!--PR02-->
+              <div class="col-lg-4 col-md-6 item oficinas" >
+                  <div class="projects-content mx-auto image-holder zoom-effect" data-aos="zoom-out">
+                      <div class="overlay-container ">
+                          <img src="images/projects-item33.jpg" class="reveal-curve-top" alt="building">
+                          <div class="overlay">
+                              <div class="description">
+                                  <p data-translate="pr02d">Fit-Out Oficinas</p>
+                                  <a href="" class="btn btn-slide btn-small btn-dark hover-slide-right text-uppercase mt-5">
+                                  <span data-translate="discover-f">Descubrir &nbsp;  &nbsp; ➞</span>
+                                  </a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  
+                  <h3 class="fs-3 text-center mt-3">
+                      <a href=" " data-translate="pr02t">Fit-Out Oficinas</a>
+                  </h3>
+                  <div class="fs-6 text-center mb-5">
+                      <p data-translate="pr02u">Madrid, España · Oficinas</p>
+                  </div>
+              </div>
+              <!--PR03-->
+              <div class="col-lg-4 col-md-6 item residencial" >
+                  <div class="projects-content mx-auto image-holder zoom-effect" data-aos="zoom-out">
+                      <div class="overlay-container ">
+                          <img src="images/projects-item77.jpg" class="reveal-curve-top" alt="building">
+                          <div class="overlay">
+                              <div class="description">
+                                  <p data-translate="pr03d">Viviendas unifamiliares independientes</p>
+                                  <a href="" class="btn btn-slide btn-small btn-dark hover-slide-right text-uppercase mt-5">
+                                  <span data-translate="discover-f">Descubrir &nbsp;  &nbsp; ➞</span>
+                                  </a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  
+                  <h3 class="fs-3 text-center mt-3">
+                      <a href=" " data-translate="pr03t">Residencial</a>
+                  </h3>
+                  <div class="fs-6 text-center mb-5">
+                      <p data-translate="pr03u">Madrid, España · Residencial</p>
+                  </div>
+              </div>
+              <!--PR04-->
+              <div class="col-lg-4 col-md-6 item oficinas" >
+                  <div class="projects-content mx-auto image-holder zoom-effect" data-aos="zoom-out">
+                      <div class="overlay-container ">
+                          <img src="images/projects-item44.jpg" class="reveal-curve-top" alt="building">
+                          <div class="overlay">
+                              <div class="description">
+                                  <p data-translate="pr04d">Fit-Out Oficinas</p>
+                                  <a href="" class="btn btn-slide btn-small btn-dark hover-slide-right text-uppercase mt-5">
+                                  <span data-translate="discover-f">Descubrir &nbsp;  &nbsp; ➞</span>
+                                  </a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  
+                  <h3 class="fs-3 text-center mt-3">
+                      <a href=" " data-translate="pr04t">Fit-Out Oficinas</a>
+                  </h3>
+                  <div class="fs-6 text-center mb-5">
+                      <p data-translate="pr04u">Madrid, España · Oficinas</p>
+                  </div>
+              </div>
+              <!--PR05-->
+              <div class="col-lg-4 col-md-6 item oficinas" >
+                  <div class="projects-content mx-auto image-holder zoom-effect" data-aos="zoom-out">
+                      <div class="overlay-container ">
+                          <img src="images/projects-item55.jpg" class="reveal-curve-top" alt="building">
+                          <div class="overlay">
+                              <div class="description">
+                                  <p data-translate="pr05d">Fit-Out Oficinas</p>
+                                  <a href="" class="btn btn-slide btn-small btn-dark hover-slide-right text-uppercase mt-5">
+                                  <span data-translate="discover-f">Descubrir &nbsp;  &nbsp; ➞</span>
+                                  </a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  
+                  <h3 class="fs-3 text-center mt-3">
+                      <a href=" " data-translate="pr05t">Fit-Out Oficinas</a>
+                  </h3>
+                  <div class="fs-6 text-center mb-5">
+                      <p data-translate="pr05u">Madrid, España · Oficinas</p>
+                  </div>
+              </div>
+              <!--PR06-->
+              <div class="col-lg-4 col-md-6 item residencial" >
+                  <div class="projects-content mx-auto image-holder zoom-effect" data-aos="zoom-out">
+                      <div class="overlay-container ">
+                          <img src="images/projects-item88.jpg" class="reveal-curve-top" alt="building">
+                          <div class="overlay">
+                              <div class="description">
+                                  <p data-translate="pr06d">Viviendas unifamiliares adosadas</p>
+                                  <a href="" class="btn btn-slide btn-small btn-dark hover-slide-right text-uppercase mt-5">
+                                  <span data-translate="discover-f">Descubrir &nbsp;  &nbsp; ➞</span>
+                                  </a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  
+                  <h3 class="fs-3 text-center mt-3">
+                      <a href=" " data-translate="pr06t">Residencial</a>
+                  </h3>
+                  <div class="fs-6 text-center mb-5">
+                      <p data-translate="pr06u">Madrid, España · Residencial</p>
+                  </div>
+              </div>
+              <!--PR07-->
+              <div class="col-lg-4 col-md-6 item hoteles" >
+                  <div class="projects-content mx-auto image-holder zoom-effect" data-aos="zoom-out">
+                      <div class="overlay-container ">
+                          <img src="images/projects-item76.jpg" class="reveal-curve-top" alt="building">
+                          <div class="overlay">
+                              <div class="description">
+                                  <p data-translate="pr07d">Fit-Out Hoteles</p>
+                                  <a href=" " class="btn btn-slide btn-small btn-dark hover-slide-right text-uppercase mt-5">
+                                  <span data-translate="discover-f">Descubrir &nbsp;  &nbsp; ➞</span>
+                                  </a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  
+                  <h3 class="fs-3 text-center mt-3">
+                      <a href=" " data-translate="pr07t">Fit-Out Hoteles</a>
+                  </h3>
+                  <div class="fs-6 text-center mb-5">
+                      <p data-translate="pr07u">Madrid, España · Hoteles</p>
+                  </div>
+              </div>
+
+              <!--PR08-->
+              <div class="col-lg-4 col-md-6 item hoteles" >
+                  <div class="projects-content mx-auto image-holder zoom-effect" data-aos="zoom-out">
+                      <div class="overlay-container ">
+                          <img src="images/projects-item78.jpg" class="reveal-curve-top" alt="building">
+                          <div class="overlay">
+                              <div class="description">
+                                  <p data-translate="pr08d">Fit-Out Hoteles</p>
+                                  <a href=" " class="btn btn-slide btn-small btn-dark hover-slide-right text-uppercase mt-5">
+                                  <span data-translate="discover-f">Descubrir &nbsp;  &nbsp; ➞</span>
+                                  </a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  
+                  <h3 class="fs-3 text-center mt-3">
+                      <a href=" " data-translate="pr08t">Fit-Out Hoteles</a>
+                  </h3>
+                  <div class="fs-6 text-center mb-5">
+                      <p data-translate="pr08u">Madrid, España · Hoteles</p>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--
+      <section id="our-services" class="jarallax d-flex align-items-center our-services-bg">
+        <div class="container" data-aos="fade-left" data-aos-duration="2000">
+          <div class="row">
+            
+            <div class="col-lg-4 col-md-6">
+              <div class="service-item">
+                <div class="col-lg-2 col-md-12">
+                  <iconify-icon class="index-icon my-2 " icon="material-symbols:design-services-outline-rounded"></iconify-icon>
+                </div>
+                <h3 class="light fs-1">Diseñamos</h3>
+                <p class="light">Un equipo de arquitectos e ingenieros trabajan la planificación y el diseño desde un punto de vista estratégico. Know-How, talento e ilusión para afrontar cada proyecto de diseño y construcción de forma personalizada.</p>
+              </div>
+            </div>
+          
+            <div class="col-lg-6">
+              <div class="service-item">
+                <div class="col-lg-2 col-md-12">
+                  <iconify-icon class="index-icon my-2" icon="material-symbols:forklift-rounded"></iconify-icon>
+                </div>
+                <h3 class="light fs-1">Construimos</h3>
+                <p class="light">Ya sean unas viviendas de obra nueva, una transformación integral o un fit-out, en 50i nos encargamos de dirigir y ejecutar cada proyecto atendiendo a nuestros valores de calidad, honestidad, métodología fast-track e ingeniería de valor.</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="service-item">
+                <div class="col-lg-2 col-md-12">
+                  <iconify-icon class="index-icon my-2" icon="material-symbols:chair-outline"></iconify-icon>
+                </div>
+                <h3 class="light fs-1">Equipamos</h3>
+                <p class="light">Soluciones innovadoras de mobiliario y tecnología, fabricadas a medida o seleccionadas entre las mejores marcas del mercado. Somos interioristas expertos en crear ambientes únicos.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    -->
+      <!--
+      <section id="our-team" class="padding-large overflow-hidden">
+        <div class="container" data-aos="fade-up" data-aos-duration="2000">
+          <div class="row">
+            <div class="swiper-header d-flex flex-wrap justify-content-between mb-3">
+              <div class="section-header mb-5 text-uppercase">
+                <h2 class="mb-3 left-pattern">Nuestro equipo</h2>
+                <h3>Perfecto para cualquier reto</h3>
+              </div>
+              <div class="swiper-arrow-wrap d-flex">
+                <div class="swiper-arrow border rounded-circle d-flex align-items-center justify-content-center me-3">
+                  <svg class="icon-arrow-left" width="40" height="20">
+                    <use xlink:href="#icon-arrow-left" />
+                  </svg>
+                </div>
+                <div class="swiper-arrow border rounded-circle d-flex align-items-center justify-content-center">
+                  <svg class="icon-arrow-right" width="40" height="20">
+                    <use xlink:href="#icon-arrow-right" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="swiper team-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="team-member position-relative">
+                    <div class="image-holder zoom-effect mx-auto">
+                      <img src="images/team-item11.jpg" alt="team member" class="img-fluid">
+                      <ul class="social-links list-unstyled position-absolute">
+                        <li>
+                          <a href="#" class="text-dark">
+                            <svg class="facebook text-primary" width="25" height="20" aria-hidden="true">
+                              <use xlink:href="#facebook"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="text-dark">
+                            <svg class="twitter text-primary" width="16" height="16" aria-hidden="true">
+                              <use xlink:href="#x2"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="text-dark">
+                            <svg class="instagram text-primary" width="25" height="20" aria-hidden="true">
+                              <use xlink:href="#instagram"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="text-dark">
+                            <svg class="youtube text-primary" width="25" height="20" aria-hidden="true">
+                              <use xlink:href="#linkedin"></use>
+                            </svg>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="member-info pt-4 text-center">
+                      <h3 class="fs-4 text-uppercase">Gloria S.</h3>
+                      <span class="fs-6">CEO</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="team-member position-relative">
+                    <div class="image-holder zoom-effect">
+                      <img src="images/team-item22.jpg" alt="team member" class="img-fluid">
+                      <ul class="social-links list-unstyled position-absolute">
+                        <li>
+                          <a href="#" class="text-dark">
+                            <svg class="facebook text-primary" width="25" height="20" aria-hidden="true">
+                              <use xlink:href="#facebook"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="text-dark">
+                            <svg class="twitter text-primary" width="25" height="20" aria-hidden="true">
+                              <use xlink:href="#x2"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="text-dark">
+                            <svg class="instagram text-primary" width="25" height="20" aria-hidden="true">
+                              <use xlink:href="#instagram"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="text-dark">
+                            <svg class="youtube text-primary" width="25" height="20" aria-hidden="true">
+                              <use xlink:href="#linkedin"></use>
+                            </svg>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="member-info pt-4 text-center">
+                      <h3 class="fs-4 text-uppercase">Adriana M.</h3>
+                      <span class="fs-6">Manager</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="team-member position-relative">
+                    <div class="image-holder zoom-effect">
+                      <img src="images/team-item33.jpg" alt="team member" class="img-fluid">
+                      <ul class="social-links list-unstyled position-absolute">
+                        <li>
+                          <a href="#" class="text-dark">
+                            <svg class="facebook text-primary" width="25" height="20" aria-hidden="true">
+                              <use xlink:href="#facebook"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="text-dark">
+                            <svg class="twitter text-primary" width="25" height="20" aria-hidden="true">
+                              <use xlink:href="#x2"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="text-dark">
+                            <svg class="instagram text-primary" width="25" height="20" aria-hidden="true">
+                              <use xlink:href="#instagram"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="text-dark">
+                            <svg class="youtube text-primary" width="25" height="20" aria-hidden="true">
+                              <use xlink:href="#linkedin"></use>
+                            </svg>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="member-info pt-4 text-center">
+                      <h3 class="fs-4 text-uppercase">Isabel G.</h3>
+                      <span class="fs-6">Manager</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="team-member">
+                    <div class="image-holder">
+                      <img src="images/team-item44.jpg" alt="team member" class="img-fluid">
+                      <ul class="social-links list-unstyled position-absolute">
+                        <li>
+                          <a href="#" class="text-dark">
+                            <svg class="facebook text-primary" width="25" height="20" aria-hidden="true">
+                              <use xlink:href="#facebook"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="text-dark">
+                            <svg class="twitter text-primary" width="25" height="20" aria-hidden="true">
+                              <use xlink:href="#x2"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="text-dark">
+                            <svg class="instagram text-primary" width="25" height="20" aria-hidden="true">
+                              <use xlink:href="#instagram"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="text-dark">
+                            <svg class="youtube text-primary" width="25" height="20" aria-hidden="true">
+                              <use xlink:href="#linkedin"></use>
+                            </svg>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="member-info pt-4 text-center">
+                      <h3 class="fs-4 text-uppercase">Guillermo N.</h3>
+                      <span class="fs-6">Manager</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="team-member">
+                    <div class="image-holder">
+                      <img src="images/team-item22.jpg" alt="team member" class="img-fluid">
+                      <ul class="social-links list-unstyled position-absolute">
+                        <li>
+                          <a href="#" class="text-dark">
+                            <svg class="facebook text-primary-500" width="25" height="20" aria-hidden="true">
+                              <use xlink:href="#facebook"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="text-dark">
+                            <svg class="twitter text-primary-500" width="25" height="20" aria-hidden="true">
+                              <use xlink:href="#twitter"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="text-dark">
+                            <svg class="instagram text-primary-500" width="25" height="20" aria-hidden="true">
+                              <use xlink:href="#instagram"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="text-dark">
+                            <svg class="youtube text-primary-500" width="25" height="20" aria-hidden="true">
+                              <use xlink:href="#youtube"></use>
+                            </svg>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="member-info pt-4 text-center">
+                      <h3 class="fs-4 text-uppercase">Maria N.</h3>
+                      <span class="fs-6">Manager</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    -->
+    <!--
+      <section id="our-achievement" class="padding-large bg-cream">
+        <div class="container" data-aos="fade-up" data-aos-duration="2000">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="counter-info text-center d-flex align-items-end">
+                <div class="counter-number d-flex align-items-center">
+                  <h4 class="timer fw-bold m-0 counter" data-to="100" data-speed="1000">0</h4>
+                </div>
+                <p class="counter-description text-uppercase ps-2 fw-bold text-start">Proyectos realizados</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="counter-info text-center d-flex align-items-end">
+                <div class="counter-number d-flex align-items-center">
+                  <h4 class="timer fw-bold m-0 counter" data-to="100" data-speed="1000">0</h4>
+                </div>
+                <p class="counter-description text-uppercase ps-2 fw-bold text-start">Especialistas</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="counter-info text-center d-flex align-items-end">
+                <div class="counter-number d-flex align-items-center">
+                  <h4 class="timer fw-bold m-0 counter" data-to="100" data-speed="1000">0</h4>
+                </div>
+                <p class="counter-description text-uppercase ps-2 fw-bold text-start">Clientes satisfechos</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="counter-info text-center d-flex align-items-end">
+                <div class="counter-number d-flex align-items-center">
+                  <h4 class="timer fw-bold m-0 counter" data-to="10" data-speed="1000">0</h4>
+                </div>
+                <p class="counter-description text-uppercase ps-2 fw-bold text-start">Premios</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    -->
+      <section id="contact" class="jarallax d-flex align-items-center padding-large contact-bg" style="">
+        <div class="container" data-aos="fade-up" data-aos-duration="2000">
+          <div class="row justify-content-center">
+            <div class="col-md-10 btn-center">
+              <h3 class="light"  data-translate="contact2">¿Listo para empezar un nuevo proyecto?</h3>
+              <a href="contacto.html" class="btn-slide btn-medium btn-light hover-slide-right text-uppercase mt-5">
+                <span data-translate="contact1">Contáctanos</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer id="footer" class="overflow-hidden padding-large">
+        <div class="container">
+          <div class="row d-flex flex-wrap justify-content-between">
+            <div class="col-lg-3 col-md-12 pb-3">
+              <div class="footer-menu">
+                <img src="images/logocolor.svg" alt="footer logo" class="pb-4" width="80px">
+                <p data-translate="slogan">Soluciones de mobiliario para tu espacio de trabajo</p>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 pb-3">
+              <div class="footer-menu">
+                <ul class="menu-list list-unstyled">
+                  <li class="pb-2">
+                    <a href="about.html" data-translate="about_us">Sobre nosotros</a>
+                  </li>
+                  <li class="pb-2">
+                    <a href="proyectos.html" data-translate="projects">Proyectos</a>
+                  </li>
+                  <li class="pb-2">
+                    <a href="contacto.html" data-translate="contact">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="col-lg-2 col-md-4 col-sm-6 pb-3">
+              <div class="footer-menu">
+                <ul class="menu-list list-unstyled">
+                  <li class="pb-2">
+                    <a href="index.html#projects" data-translate="our-projects3">Residencial</a>
+                  </li>
+                  <li class="pb-2">
+                    <a href="index.html#projects" data-translate="our-projects4">Oficinas/Coworking</a>
+                  </li>
+                  <li class="pb-2">
+                    <a href="index.html#projects" data-translate="our-projects5">Hoteles</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 pb-3">
+              <div class="footer-menu">
+                <ul class="menu-list list-unstyled">
+                  <li class="pb-2">Cronos 8, 3 planta, 28037 Madrid </li>
+                  <li class="pb-2">(+34) 649 52 10 76</li>
+                  <li class="pb-2">
+                    <a href="mailto:">direccion@50i.es</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div class="footer-bottom d-flex flex-wrap justify-content-between border-top pt-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-2">
+            <p class="text-center"><script type="text/javascript"> 
+              copyright=new Date();
+              update=copyright.getFullYear();
+              document.write("©" + update + " " + "<strong>50ingenieros</strong>");
+            </script></p>
+          </div>
+          <div class="col-lg-8">
+            <div class="row pb-3">
+                <div class="col-lg-4 text-center">
+                    <a href="aviso-legal.html" data-translate="legal">Aviso legal</a>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <a href="politica-de-privacidad.html" data-translate="privacy">Política de privacidad</a>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <a href="politica-de-cookies.html" data-translate="cookiesp">Política de cookies</a>
+                </div>
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <ul class="social-links list-unstyled d-flex justify-content-center">
+              <!--
+              <li class="pe-3">
+                <a href="#">
+                  <svg class="twitter text-primary-500" width="25" height="20" aria-hidden="true">
+                    <use xlink:href="#x2"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="pe-3">
+                <a href="#">
+                  <svg class="instagram text-primary-500" width="25" height="20" aria-hidden="true">
+                    <use xlink:href="#linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="youtube text-primary-500" width="25" height="20" aria-hidden="true">
+                    <use xlink:href="#youtube"></use>
+                  </svg>
+                </a>
+              </li>-->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script> 
+    <script src="js/jquery-1.11.0.min.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script> 
+    <script type="text/javascript" src="aos/aos.js"></script>
+    <script type="text/javascript" src="js/plugins.js"></script>
+    <script type="text/javascript" src="js/script.js"></script> 
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script> 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="lang.js"></script>
+
+  </body>
+
+  <div class="popup-container" id="cookiePopup" style="display: none;">
+    <p><strong data-translate="cookiet">Configuración de Cookies</strong></p>
+    <p data-translate="cookied">Este sitio web utiliza cookies para mejorar la experiencia del usuario. Por favor, acepta nuestras cookies para continuar navegando.</p>
+    <div class="popup-buttons">
+        <button class="reject-btn" data-translate="decline">Rechazar</button>
+        <button class="accept-btn" data-translate="accept">Aceptar</button>
+    </div>
+  </div>
+
+</html>
