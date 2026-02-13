@@ -5,6 +5,7 @@
  ------------------------------------ 
  ====================================*/
 
+/* ========= LOAD COMPONENT ========= */
 async function loadComponent(id, path, callback) {
   const el = document.getElementById(id);
   if (!el) return;
@@ -21,9 +22,9 @@ async function loadComponent(id, path, callback) {
 
 /* ========= HEADER ========= */
 loadComponent("header-placeholder", "/components/header.html", () => {
-  const links = document.querySelectorAll(".main-menu a");
 
-  // Página actual (funciona en cualquier nivel)
+  /* Active menu item */
+  const links = document.querySelectorAll(".main-menu a");
   const currentPage =
     window.location.pathname.split("/").pop() || "index.html";
 
@@ -32,6 +33,12 @@ loadComponent("header-placeholder", "/components/header.html", () => {
     if (linkHref === currentPage) {
       link.classList.add("main-menu-active");
     }
+  });
+
+  /* Mobile menu */
+  $('.nav-switch').on('click', function (e) {
+    e.preventDefault();
+    $('.main-menu').slideToggle(300);
   });
 });
 
@@ -76,15 +83,8 @@ $(document).ready(function () {
     });
   }
 
+
 });
-
-
-
-
-
-
-
-
 
 
 'use strict';
@@ -110,11 +110,12 @@ $(window).on('load', function() {
 	/*------------------
 		Navigation
 	--------------------*/
+	/*
 	$('.nav-switch').on('click', function(event) {
 		$('.main-menu').slideToggle(400);
 		event.preventDefault();
 	});
-
+*/
 
 
 	/*------------------

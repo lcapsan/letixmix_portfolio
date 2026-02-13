@@ -1262,6 +1262,7 @@ transition: background-image 0.2s ease-in-out;
        -moz-box-shadow: 0 10px 6px -6px #777;
             box-shadow: 0 10px 6px -6px #777;
   }
+
   .main-menu ul li a {
     padding: 10px 15px;
     border-bottom: 1px dotted #ddd;
@@ -1289,6 +1290,7 @@ transition: background-image 0.2s ease-in-out;
     color: #333;
     top: 35px;
     display: block;
+    z-index: 1000;
   }
   .header-btn {
     display: none;
