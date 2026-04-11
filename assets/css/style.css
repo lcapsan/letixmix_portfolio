@@ -25,6 +25,10 @@ h6 {
   margin: 0;
 }
 
+.portfolios-area.mix-loading article {
+  visibility: hidden;
+}
+
 .body-index {
     background: linear-gradient(315deg, #ff0000, #ff9400, #eeff00, #179242, #ff0090, #f0a0d1, #a0f0df, #0bbd97);
     background-size: 1000% 100%;
@@ -35,6 +39,31 @@ h6 {
     animation: AnimationName 59s ease infinite;
 
 }
+
+.lang-switcher {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.lang-btn {
+  padding: 0.25rem 0.6rem;
+  border: 0px;
+  background-color: transparent;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.lang-btn:hover {
+  background-color: #f0f0f0;
+}
+
+.lang-btn.active {
+  background-color: #333;
+  color: #fff;
+  border-color: #333;
+}
+
 
 .tags{
   margin-top: 4px;
@@ -175,6 +204,7 @@ ol {
 .work-together{
   margin-top: 60px;
   font-size: 16px;
+  float: left;
 }
 
 .work-together p{  
@@ -484,8 +514,21 @@ ol {
     animation: AnimationName 59s ease infinite;
 }
 
+.main-menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem; 
+}
+
 .main-menu ul {
+  display: flex;
   list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 1rem;
+  align-items: center;
+  padding-bottom: 1rem;
 }
 
 .main-menu ul li {
@@ -649,6 +692,7 @@ ol {
   background-position: center center;
   position: relative;
   margin-bottom: 30px;
+  background-color: #ffffff; 
 }
 
 .portfolio-item .pi-inner {
@@ -691,6 +735,7 @@ ol {
 
 .mimaginate{
   background-image: url("../img/projects/mimaginate.png");
+
 }
 .mimaginate:hover{
   background-image: url("../img/projects/mimaginatehover.png");
@@ -858,6 +903,10 @@ transition: background-image 0.2s ease-in-out;
   background-image: url("../img/projects/pokemonhover.png");
   -webkit-transition: background-image 0.2s ease-in-out;
 transition: background-image 0.2s ease-in-out;
+}
+
+.portfolio-item {
+  transition: background-image 0.2s ease-in-out;
 }
 
 .portfolio-item:hover .pi-inner h6 {
