@@ -1,8 +1,8 @@
-<header class="header-section">
+<header class="header-section" style="position: relative;">
   <div class="container-fluid">
     <div class="row align-items-center">
 
-      <div class="col-6 col-md-3 p-0">
+      <div class="col-6 p-0">
         <div class="logo">
           <a href="/index.html">
             <img src="/assets/img/logo.svg" alt="Letixmix logo" class="site-logo">
@@ -10,15 +10,21 @@
         </div>
       </div>
 
-      <div class="col-6 col-md-9 d-flex justify-content-end align-items-center">
-        <nav class="main-menu d-flex align-items-center">
-          <ul class="d-flex align-items-center mb-0">
+      <div class="col-6 d-flex justify-content-end align-items-center">
+        <!-- Botón hamburguesa solo en móvil -->
+        <button class="nav-switch" aria-label="Toggle menu">
+          <i class="fa fa-bars"></i>
+        </button>
+
+        <!-- Menú: en desktop siempre visible, en móvil oculto por defecto -->
+        <nav class="main-menu" id="main-nav">
+          <ul>
             <li><a href="/pages/projects.html" data-i18n="header_projects">Projects</a></li>
             <li><a href="/pages/about.html" data-i18n="header_about">About</a></li>
             <li><a href="/pages/contact.html" data-i18n="header_contact">Contact</a></li>
           </ul>
 
-          <div class="lang-switcher d-flex align-items-center ml-3">
+          <div class="lang-switcher">
             <button class="lang-btn" data-lang="es">ES</button>
             <button class="lang-btn" data-lang="en">EN</button>
           </div>
@@ -26,10 +32,5 @@
       </div>
 
     </div>
-  </div>
-
-  <!-- Mobile menu toggle -->
-  <div class="nav-switch" aria-label="Toggle menu">
-    <i class="fa fa-bars" aria-hidden="true"></i>
   </div>
 </header>
